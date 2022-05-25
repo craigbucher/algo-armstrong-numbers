@@ -8,8 +8,8 @@ function armstrong(start, end) {
       //iterate through digits
       for (let j = 0; j < digits.length; j++){
         // calculate number to powwer
-        digits[j] = Math.pow(digits[j], digits.length)
-        sum += digits[j]
+        let power = digits[j] ** digits.length
+        sum += power
         if (sum == num) {
           result.push(sum)
         }
@@ -18,4 +18,4 @@ function armstrong(start, end) {
     return result;
   }
   
-  console.log(armstrong(0,999))
+  //console.log(armstrong(0,999))
