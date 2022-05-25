@@ -1,4 +1,4 @@
-function armstrong(start, end) {
+exports.findArmstrongNumbers = function(start, end) {
     const result = [];
     for (let i = start; i <= end; i++){
       let sum = 0;
@@ -18,4 +18,4 @@ function armstrong(start, end) {
     return result;
   }
   
-  //console.log(armstrong(0,999))
+  console.log(exports.findArmstrongNumbers(0,999))
